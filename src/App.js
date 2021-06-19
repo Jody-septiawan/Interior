@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+// Section
+import Home from "./section/Home";
+import Sevices from "./section/Sevices";
+import Blog from "./section/Blog";
+import Download from "./section/Download";
+import Footer from "./section/Footer";
+
+import Favicon from './assets/img/favicon.svg'
+
+document.title = 'Interior';
+const favicon = document.getElementById('favicon');
+favicon.setAttribute("href", Favicon);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Home />
+      <Sevices />
+      <Blog />
+      <Download />
+      {/* <Footer /> */}
+    </>
   );
 }
 
