@@ -27,6 +27,7 @@ export default function Download() {
                     <Col md="5" className="d-flex align-items-center">
                         <div>
                                 <img src={ImgPhone} />
+                                <span className="desc">*Disc 50% for All purchese</span>
                         </div>
                     </Col>
                 </Row>
